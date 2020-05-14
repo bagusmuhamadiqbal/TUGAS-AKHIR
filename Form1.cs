@@ -170,7 +170,7 @@ namespace HERO_AND_DIAMOND
         private void button1_Click(object sender, EventArgs e)
         {
             int i = 1;
-            while (i<=3)
+            while (i<=2)
             if (txtuser.Text == "12345" && txtzona.Text == "12345")
             {
                 int total = 0;
@@ -182,11 +182,12 @@ namespace HERO_AND_DIAMOND
                 txtadmin.Text = "Rp. " + admin;
                 pembayaran = total + admin;
                 txttotalpembayaran.Text = "Rp. " + pembayaran;
+                    MessageBox.Show("Transaksi Berhasil\n\n Silahkan Cek Akun Anda");
                     break;
             }
             else
             {
-                    MessageBox.Show("User ID atau ID zona salah " + i);i++;               
+                    MessageBox.Show("User ID atau ID zona salah.\n\n PERINGATAN " + i);i++;               
             }
         }
 
